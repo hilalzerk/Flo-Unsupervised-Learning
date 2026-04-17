@@ -4,8 +4,9 @@ Bu proje, FLO'nun müşteri verilerini kullanarak Gözetimsiz Öğrenme (Unsuper
 ## 📊 Veri Seti Hikayesi
 Veri seti, FLO’dan 2020 - 2021 yıllarında OmniChannel (hem online hem offline) alışveriş yapan müşterilerin geçmiş davranışlarından oluşmaktadır.
 
-Değişken,Açıklama
+## Değişken,Açıklama
 master_id,Eşsiz müşteri numarası
+
 order_channel,"Alışveriş yapılan platform kanalı (Android, iOS, Desktop, Mobile)"
 last_order_date,En son alışveriş yapılan tarih
 order_num_total,Toplam alışveriş sayısı (Online + Offline)
