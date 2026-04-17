@@ -8,13 +8,17 @@ Veri seti, FLO’dan 2020 - 2021 yıllarında OmniChannel (hem online hem offlin
 master_id,Eşsiz müşteri numarası
 
 order_channel,"Alışveriş yapılan platform kanalı (Android, iOS, Desktop, Mobile)"
+
 last_order_date,En son alışveriş yapılan tarih
+
 order_num_total,Toplam alışveriş sayısı (Online + Offline)
+
 customer_value_total,Müşterinin toplam harcaması (Online + Offline)
+
 interested_in_categories_12,Son 12 ayda alışveriş yapılan kategoriler
 
-🛠️ Uygulanan Adımlar
-1. Veri Hazırlama (Data Preparation)
+# 🛠️ Uygulanan Adımlar
+## 1. Veri Hazırlama (Data Preparation)
 
 Tarih değişkenleri datetime formatına çevrildi.
 
@@ -22,7 +26,7 @@ Recency (yenilik), Tenure (müşteri yaşı), Frequency (toplam işlem) ve Monet
 
 Aykırı değerler (outliers), belirlenen eşik değerlerle (0.05 ve 0.95 quantiles) baskılandı.
 
-2. K-Means Segmentasyonu
+## 2. K-Means Segmentasyonu
 
 Veriler MinMaxScaler ile standartlaştırıldı.
 
@@ -32,7 +36,7 @@ Belirlenen küme sayısına göre model fit edildi ve her müşteriye bir segmen
 
 Segmentlerin istatistiksel özetleri (ortalama harcama, alışveriş sıklığı vb.) çıkarıldı.
 
-3. Hiyerarşik Kümeleme (Hierarchical Clustering)
+## 3. Hiyerarşik Kümeleme (Hierarchical Clustering)
 
 Standardize edilmiş veri seti üzerinden ward yöntemiyle mesafe matrisi oluşturuldu.
 
